@@ -1,0 +1,59 @@
+.admin-user-page {
+    padding: 20px;
+  }
+  
+  .title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .user-table-container {
+    overflow-x: auto;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background: #f4f4f4;
+  }
+  
+  .role.admin {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .role.user {
+    color: #2980b9;
+  }
+  
+  /* .fade-in {
+    animation: fadeIn 1s ease-in;
+  } */
+  
+  .slide-up {
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

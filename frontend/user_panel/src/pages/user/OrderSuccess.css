@@ -1,0 +1,126 @@
+/* Container & animation */
+
+
+
+.order-success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    opacity: 0;
+    background-color: #2874f0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .order-success-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Card style */
+  .order-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    padding: 3rem 4rem;
+    max-width: 450px;
+    text-align: center;
+    animation: scaleUp 0.8s ease forwards;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Titles */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    color: #2c7a7b;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(44, 122, 123, 0.3);
+  }
+  
+  .subtitle {
+    font-size: 1.15rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+  }
+  
+  /* Order details */
+  .order-details {
+    text-align: left;
+    margin-bottom: 2rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1.5rem;
+    color: #2d3748;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .order-details h2 {
+    margin-bottom: 1rem;
+    color: #2c7a7b;
+    font-weight: 600;
+  }
+  
+  .order-details p {
+    margin: 0.3rem 0;
+  }
+  
+  .status {
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  .status.pending {
+    background-color: #d69e2e;
+  }
+  
+  .status.comfirmed {
+    background-color: #3182ce;
+  }
+  
+  .status.shipping {
+    background-color: #805ad5;
+  }
+  
+  .status.delivered {
+    background-color: #38a169;
+  }
+  
+  .status.cancelled {
+    background-color: #e53e3e;
+  }
+  
+  /* Button */
+  .btn {
+    background: linear-gradient(135deg, #38b2ac 0%, #319795 100%);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(50, 150, 150, 0.3);
+    transition: background 0.4s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #319795 0%, #2c7a7b 100%);
+    box-shadow: 0 12px 24px rgba(50, 150, 150, 0.5);
+  }
+  

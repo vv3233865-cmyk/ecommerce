@@ -1,0 +1,78 @@
+.admin-order-page {
+    padding: 20px;
+  }
+  
+  .title {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInDown 0.8s ease-in-out;
+  }
+  
+  .order-table-container {
+    overflow-x: auto;
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .order-table th,
+  .order-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .order-table th {
+    background: #f4f4f4;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .status.pending {
+    background: #f39c12;
+  }
+  
+  .status.completed {
+    background: #27ae60;
+  }
+  
+  .status.cancelled {
+    background: #e74c3c;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+  
+  .title {
+    animation: fadeInDown 0.8s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

@@ -1,0 +1,100 @@
+body {
+  /* background: linear-gradient(135deg, #667eea, #764ba2);  deep purple/blue gradient */
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-container {
+  width: 70%;
+  max-width: 700px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.85);  /* more solid glass card */
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  animation: popIn 0.7s ease forwards;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;   /* solid text */
+  margin-bottom: 30px;
+}
+
+.profile-form label {
+  color: #444;   /* stronger text */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-form input {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(240, 240, 240, 1);  /* solid light field */
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.profile-form input::placeholder {
+  color: #999;  /* subtle placeholder */
+}
+
+.profile-form input:focus {
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102,126,234,0.5);
+}
+
+.form-actions button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-actions button[type="submit"] {
+  background: #667eea;
+  color: #fff;
+}
+
+.form-actions button[type="submit"]:hover {
+  background: #556cd6;
+}
+
+.form-actions button[type="button"] {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.form-actions button[type="button"]:hover {
+  background: #e63946;
+}
+.profile-card p{
+  border: 1px solid black;
+  padding-bottom: 40px;
+  border-radius: 20px ;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+ 
+}
+
